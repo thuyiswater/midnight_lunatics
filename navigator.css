@@ -39,7 +39,7 @@
 #menu ul li a:hover {
    color: #FFF;
    background-color: #4536A7;
-   -webkit-box-shadow: 0px 4px 5px rgba(50, 40, 50, 0.93);
+   -webkit-box-shadow: 0px 4px 5px rgba(50, 50, 50, 0.93);
    -moz-box-shadow:    0px 4px 5px rgba(50, 50, 50, 0.93);
    box-shadow:         0px 4px 5px rgba(50, 50, 50, 0.93);
 }
