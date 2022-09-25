@@ -42,7 +42,10 @@
                                 <a class="btn btn-secondary" style="padding-left: 30px; padding-right: 30px" data-bs-toggle="collapse" href="#collapseOne" onclick="buyBtn1()">Cancel</a>
                             </div>
                             <div class="p-2" >
-                                <a class="btn btn-dark" style="padding-left: 50px; padding-right: 50px" href="#">Buy USDT</a>
+                                <!-- <a class="btn btn-dark" style="padding-left: 50px; padding-right: 50px" href="#">Buy USDT</a> -->
+                                <button type="button" class="btn btn-dark"  style="padding-left: 50px; padding-right: 50px" data-bs-toggle="modal" data-bs-target="#confirm">
+                                    Buy USDT
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -66,7 +69,10 @@
                                 <a class="btn btn-secondary" style="padding-left: 30px; padding-right: 30px" data-bs-toggle="collapse" href="#collapseTwo" onclick="buyBtn2()">Cancel</a>
                             </div>
                             <div class="p-2" >
-                                <a class="btn btn-dark" style="padding-left: 50px; padding-right: 50px" href="#">Buy USDT</a>
+                                <!-- <a class="btn btn-dark" style="padding-left: 50px; padding-right: 50px" href="#">Buy USDT</a> -->
+                                <button type="button" class="btn btn-dark"  style="padding-left: 50px; padding-right: 50px" data-bs-toggle="modal" data-bs-target="#confirmFail">
+                                    Buy USDT
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -98,6 +104,111 @@
             
             </div>
         </div>
+
+        <div class="modal fade" id="confirm">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Confirmation</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        Wait for few minutes to encrypt your data for security reason
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#success">
+                            Confirm
+                        </button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="confirmFail">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Confirmation</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#fail">
+                            Confirm
+                        </button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+      
+        <div class="modal fade" id="success">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Transaction Success</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="fail">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Transaction Fail</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
         <script>
             function buyBtn1() {
                 var x = document.getElementById("buy-btn-1");
