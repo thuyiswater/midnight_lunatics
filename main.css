@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+.main {
+    padding: 50px;
+}
+
+.btn-secondary {
+    background-color: #d9d9d9 !important;
+    color: black !important;
+    border: none !important;
+}
+
+.btn-dark {
+    background-color: #5b2c87 !important;
+    border: none !important;
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+.username {
+    color: #5b2c87;
+    font-family: 'Poppins', sans-serif;
+}
