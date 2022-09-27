@@ -15,6 +15,8 @@ function onConfirm(status){
     var loading = document.getElementById("lds");
     loading.style.visibility = "visible";
 
+    document.getElementById("success").style.visibility = "hidden";
+    document.getElementById("fail").style.visibility = "hidden";
     var delayInMilliseconds = 2000; //2 second
     setTimeout(function() {
         //your code to be executed after 2 second
@@ -23,6 +25,10 @@ function onConfirm(status){
 
         var loading = document.getElementById("lds");
         loading.style.visibility = "hidden";
+
+        document.getElementById("success").style.visibility = "visible";
+        document.getElementById("fail").style.visibility = "visible";
+
       }, delayInMilliseconds);
 
     
