@@ -31,7 +31,13 @@
             
         </div>
         
-        <div class="main">
+        <div class="loading-parent">
+            <div style="visibility: hidden;" id="lds"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+        <!-- Loading  -->
+
+        <!-- Buy item  -->
+        <div id="main">
             <div id="accordion">
                 <div class="card">
                     <div class="card-body" id="card1">
@@ -272,7 +278,7 @@
 
                     <!-- Modal footer -->
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#success">
+                        <button type="button" class="btn btn-success"  data-bs-toggle="modal" onclick="onConfirm(true)" data-bs-target="#success">
                             Confirm
                         </button>
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
@@ -299,7 +305,7 @@
 
                     <!-- Modal footer -->
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#fail">
+                        <button type="button" class="btn btn-success"  data-bs-toggle="modal"  onclick="onConfirm()" data-bs-target="#fail">
                             Confirm
                         </button>
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
@@ -359,44 +365,7 @@
             </div>
         </div>
 
-        <script>
-            function buyBtn1() {
-                var x = document.getElementById("buy-btn-1");
-                x.style.display = "block";
-                var y = document.getElementById("card1");
-                y.style.display = "block";
-            }
-            function disbuyBtn1() {
-                var x = document.getElementById("buy-btn-1");
-                x.style.display = "none";
-                var y = document.getElementById("card1");
-                y.style.display = "none";
-            }
-            function buyBtn2() {
-                var x = document.getElementById("buy-btn-2");
-                x.style.display = "block";
-                var y = document.getElementById("card2");
-                y.style.display = "block";
-            }
-            function disbuyBtn2() {
-                var x = document.getElementById("buy-btn-2");
-                x.style.display = "none";
-                var y = document.getElementById("card2");
-                y.style.display = "none";
-            }
-            function buyBtn3() {
-                var x = document.getElementById("buy-btn-3");
-                x.style.display = "block";
-                var y = document.getElementById("card3");
-                y.style.display = "block";
-            }
-            function disbuyBtn3() {
-                var x = document.getElementById("buy-btn-3");
-                x.style.display = "none";
-                var y = document.getElementById("card3");
-                y.style.display = "none";
-            }
-        </script>
+        <script src="./navigator.js"></script>
     </body>
     
 </html>
