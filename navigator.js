@@ -30,25 +30,37 @@ function onConfirm(status){
 function buyBtn1() {
     var x = document.getElementById("buy-btn-1");
     x.style.display = "block";
+    var y = document.getElementById("card1");
+    y.style.display = "block";
 }
 function disbuyBtn1() {
     var x = document.getElementById("buy-btn-1");
     x.style.display = "none";
+    var y = document.getElementById("card1");
+    y.style.display = "none";
 }
 function buyBtn2() {
     var x = document.getElementById("buy-btn-2");
     x.style.display = "block";
+    var y = document.getElementById("card2");
+    y.style.display = "block";
 }
 function disbuyBtn2() {
     var x = document.getElementById("buy-btn-2");
     x.style.display = "none";
+    var y = document.getElementById("card2");
+    y.style.display = "none";
 }
 function buyBtn3() {
     var x = document.getElementById("buy-btn-3");
     x.style.display = "block";
+    var y = document.getElementById("card3");
+    y.style.display = "block";
 }
 function disbuyBtn3() {
     var x = document.getElementById("buy-btn-3");
     x.style.display = "none";
+    var y = document.getElementById("card3");
+    y.style.display = "none";
 }
 
