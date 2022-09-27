@@ -1,4 +1,5 @@
-const pre_trasaction = require("./BitCoin_PreTransaction");
+
+const pre_trasaction = require("./backend/BitCoin_PreTransaction");
 
 const http = require("http")
 const path = require("path")
@@ -14,12 +15,6 @@ const server = http.createServer((req, res)=> {
     }
 });
 
-function successCallback(pos) {
-    var lat = pos.coords.latitude;
-    var lng = pos.coords.longitude;
-    alert("Latitude : " + lat + " Longitude: " + lng);
-}
- 
 const POST = process.env.PORT || 5000;
 
 server.listen(PORT, ()=>console.log(`erver running on port ${PORT}`))
