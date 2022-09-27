@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 .main {
-    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+
+
 }
 
 .btn-secondary {
@@ -13,11 +17,57 @@
 .btn-dark {
     background-color: #5b2c87 !important;
     border: none !important;
+}
+
+.buyBtn {
     padding-left: 20px; 
     padding-right: 20px;
 }
 
+.cardFeature {
+    color: gray;
+    padding-right: 20px;
+
+}
+
+.order {
+    margin-left: 30px;
+    font-size: 12px;
+    margin-top: 3px;
+    border-right: solid 1px rgba(0, 0, 0, 0.08);
+}
+
+.completion {
+    font-size: 12px;
+    margin-top: 3px;
+}
 .username {
     color: #5b2c87;
     font-family: 'Poppins', sans-serif;
+}
+
+.r1 {
+    padding-top: 20px;
+
+}
+
+.form {
+    border-left: solid 1px rgba(0, 0, 0, 0.08);
+    padding-left: 10px;
+    
+}
+
+.form  input{
+    width: 93%;
+    margin-left: 20px;
+  }
+
+.receive {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    color: rgba(0, 0, 0, 0.46);
+    margin-left: 20px;
 }
