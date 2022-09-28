@@ -1,4 +1,3 @@
-var checkSuccess = false; 
 
 function successCallback(pos) {
     var lat = pos.coords.latitude;
@@ -28,9 +27,6 @@ function onConfirm(status){
         document.getElementById("success").style.visibility = "visible";
         document.getElementById("fail").style.visibility = "visible";
 
-        if(status || checkSuccess){
-            deleteCard1();
-        }
       }, delayInMilliseconds);
 
     
@@ -40,9 +36,6 @@ function buyBtn1() {
     x.style.display = "block";
     var y = document.getElementById("card1");
     y.style.display = "block";
-    if(checkSuccess){
-        deleteCard1();
-    }
 }
 function disbuyBtn1() {
     console.log("disbuyBtn2");
@@ -51,9 +44,6 @@ function disbuyBtn1() {
     x.style.display = "none";
     var y = document.getElementById("card1");
     y.style.display = "none";
-    if(checkSuccess){
-        deleteCard1();
-    }
 }
 function buyBtn2() {
     console.log("disbuyBtn2");
@@ -62,9 +52,6 @@ function buyBtn2() {
     x.style.display = "block";
     var y = document.getElementById("card2");
     y.style.display = "block";
-    if(checkSuccess){
-        deleteCard1();
-    }
 }
 function disbuyBtn2() {
     console.log("disbuyBtn2");
@@ -73,9 +60,6 @@ function disbuyBtn2() {
     x.style.display = "none";
     var y = document.getElementById("card2");
     y.style.display = "none";
-    if(checkSuccess){
-        deleteCard1();
-    }
 }
 function buyBtn3() {
     console.log("buyBtn3");
@@ -84,9 +68,6 @@ function buyBtn3() {
     x.style.display = "block";
     var y = document.getElementById("card3");
     y.style.display = "block";
-    if(checkSuccess){
-        deleteCard1();
-    }
 }
 function disbuyBtn3() {
     console.log("disbuyBtn3");
@@ -94,14 +75,4 @@ function disbuyBtn3() {
     x.style.display = "none";
     var y = document.getElementById("card3");
     y.style.display = "none";
-    if(checkSuccess){
-        deleteCard1();
-    }
-}
-
-function deleteCard1() {
-    console.log("hello");
-    var x = document.getElementById("collapseOne");
-    x.style.display = "none";
-    checkSuccess = true; 
 }
