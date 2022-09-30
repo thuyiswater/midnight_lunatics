@@ -100,7 +100,7 @@
                                             <a class="btn btn-secondary" style="padding-left: 30px; padding-right: 30px" data-bs-toggle="collapse" href="#collapseOne" onclick="buyBtn1()">Cancel</a>
                                         </div>
                                         <div class="p-2" >
-                                            <button type="button" class="btn btn-dark"  style="padding-left: 50px; padding-right: 50px" data-bs-toggle="modal" data-bs-target="#confirm">
+                                            <button type="button" class="btn btn-dark"  style="padding-left: 50px; padding-right: 50px" data-bs-toggle="modal" data-bs-target="#gps">
                                                 Buy USDT
                                             </button>
                                         </div>
@@ -173,7 +173,7 @@
                                             <a class="btn btn-secondary" style="padding-left: 30px; padding-right: 30px" data-bs-toggle="collapse" href="#collapseTwo" onclick="buyBtn2()">Cancel</a>
                                         </div>
                                         <div class="p-2" >
-                                            <button type="button" class="btn btn-dark"  style="padding-left: 50px; padding-right: 50px" data-bs-toggle="modal" data-bs-target="#confirmFail">
+                                            <button type="button" class="btn btn-dark"  style="padding-left: 50px; padding-right: 50px" data-bs-toggle="modal" data-bs-target="#gps">
                                                 Buy USDT
                                             </button>
                                         </div>
@@ -246,7 +246,7 @@
                                             <a class="btn btn-secondary" style="padding-left: 30px; padding-right: 30px" data-bs-toggle="collapse" href="#collapseThree" onclick="buyBtn3()">Cancel</a>
                                         </div>
                                         <div class="p-2" >
-                                            <button type="button" class="btn btn-dark"  style="padding-left: 50px; padding-right: 50px" data-bs-toggle="modal" data-bs-target="#confirm">
+                                            <button type="button" class="btn btn-dark"  style="padding-left: 50px; padding-right: 50px" data-bs-toggle="modal" data-bs-target="#gps">
                                                 Buy USDT
                                             </button>
                                         </div>
@@ -258,6 +258,35 @@
                     </div>
                 </div>
             
+            </div>
+        </div>
+
+        <div class="modal fade" id="gps">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h4 class="modal-title">Allow "CryptShield" to access your location for the transaction ?</h4>
+                        <div> Your transaction will be fail if you do not allow GPS.
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#fail">
+                            Don't Allow 
+                        </button>
+                        <button type="button" class="btn btn-info" data-bs-toggle="modal"  data-bs-target="#confirm">Allow</button>
+                    </div>
+
+                </div>
             </div>
         </div>
 
